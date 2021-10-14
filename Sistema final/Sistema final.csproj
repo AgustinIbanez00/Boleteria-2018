@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{64938149-4A10-44D4-B3A4-4AA77FA37567}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Sistema_final</RootNamespace>
+    <AssemblyName>Sistema final</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>formicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAsientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAsientos.Designer.cs">
+      <DependentUpon>frmAsientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAsientosSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAsientosSelect.Designer.cs">
+      <DependentUpon>frmAsientosSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCuenta.Designer.cs">
+      <DependentUpon>frmCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDestinos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDestinos.Designer.cs">
+      <DependentUpon>frmDestinos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInicio.Designer.cs">
+      <DependentUpon>frmInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMetodoDePago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMetodoDePago.Designer.cs">
+      <DependentUpon>frmMetodoDePago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPasaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPasaje.Designer.cs">
+      <DependentUpon>frmPasaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAsientos.resx">
+      <DependentUpon>frmAsientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAsientosSelect.resx">
+      <DependentUpon>frmAsientosSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCuenta.resx">
+      <DependentUpon>frmCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDestinos.resx">
+      <DependentUpon>frmDestinos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInicio.resx">
+      <DependentUpon>frmInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMetodoDePago.resx">
+      <DependentUpon>frmMetodoDePago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPasaje.resx">
+      <DependentUpon>frmPasaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\DataSources\frmAsientos.datasource" />
+    <None Include="Properties\DataSources\frmDestinos.datasource" />
+    <None Include="Properties\DataSources\frmLogin.datasource" />
+    <None Include="Properties\DataSources\frmPasaje.datasource" />
+    <None Include="Properties\DataSources\frmPrincipal.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\Sistema_final.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\Sistema_final.Properties.Settings.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colectivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo Tecnologico Azul con Destellos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-textura-pared-cemento-grunge-blanco-banner-color-azul_7190-429.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Clases\Clases.csproj">
+      <Project>{fc2f75fd-1a71-41f3-934a-a5329305edef}</Project>
+      <Name>Clases</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cozy_gray_textured_wallpaper_110_dark_gray_textured_wallpaper___download_black_grey_grungy-859x571.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seo-social-web-network-internet_232_icon-icons.com_61542.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31624.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario-hombre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\250px-Argentina_San_Luis_location_map.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\punto-rojo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inicio sesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inicio sesion.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crear cuenta.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\autobus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\autobus30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bus-vacio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puerta-bus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bus-vacio-pa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="formicon.ico" />
+    <None Include="Resources\nuevo1.png" />
+    <None Include="Resources\visto1.png" />
+    <None Include="Resources\refresh.gif" />
+    <None Include="Resources\calendario.png" />
+    <None Include="Resources\visto.png" />
+    <None Include="Resources\guardar.png" />
+    <None Include="Resources\nuevo.png" />
+    <None Include="Resources\inventario.png" />
+    <None Include="Resources\rango.png" />
+    <None Include="Resources\fondo-calificacion2.png" />
+    <None Include="Resources\info.png" />
+    <None Include="Resources\borrar1.png" />
+    <None Include="Resources\tarjeta.png" />
+    <None Include="Resources\herramientas.png" />
+    <None Include="Resources\configuracion-16.png" />
+    <None Include="Resources\assist.gif" />
+    <None Include="Resources\delete.gif" />
+    <None Include="Resources\usuario_x.png" />
+    <None Include="Resources\borrar.png" />
+    <None Include="Resources\carrito.png" />
+    <None Include="Resources\698873-icon-136-document-edit-512.png" />
+    <None Include="Resources\crear.ico" />
+    <None Include="Resources\crear.png" />
+    <None Include="Resources\guardar.ico" />
+    <None Include="Resources\pasillo asiento.ico" />
+    <None Include="Resources\tele2.ico" />
+    <None Include="Resources\tele2.png" />
+    <None Include="Resources\television.ico" />
+    <None Include="Resources\butaca.ico" />
+    <None Include="Resources\butaca.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
